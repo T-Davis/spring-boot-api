@@ -8,17 +8,17 @@ import javax.persistence.Id;
  */
 
 @Entity
-public class Topics {
+public class Topic {
 
     @Id
     private String id;
     private String name;
     private String description;
 
-    public Topics() {
+    public Topic() {
     }
 
-    public Topics(String id, String name, String description) {
+    public Topic(String id, String name, String description) {
         this.id = id;
         this.name = name;
         this.description = description;
