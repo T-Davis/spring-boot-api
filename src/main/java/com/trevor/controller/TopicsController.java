@@ -1,11 +1,10 @@
 package com.trevor.controller;
 
-import com.trevor.Service.TopicsService;
+import com.trevor.service.TopicsService;
 import com.trevor.model.Topics;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Arrays;
 import java.util.List;
 
 /**

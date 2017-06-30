@@ -1,10 +1,16 @@
 package com.trevor.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  * Created by tdavis on 6/26/17.
  */
+
+@Entity
 public class Topics {
 
+    @Id
     private String id;
     private String name;
     private String description;

@@ -1,6 +1,8 @@
-package com.trevor.Service;
+package com.trevor.service;
 
 import com.trevor.model.Topics;
+import com.trevor.repository.TopicsRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -10,8 +12,12 @@ import java.util.List;
 /**
  * Created by tdavis on 6/26/17.
  */
+
 @Service
 public class TopicsService {
+
+    @Autowired
+    private TopicsRepository topicsRepository;
 
     private List<Topics> topics = new ArrayList<>(Arrays.asList(
             new Topics("spring", "spring framework", "learn spring"),
